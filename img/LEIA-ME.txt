@@ -1,0 +1,1 @@
+Coloque aqui as imagens usadas pela LP, mantendo os nomes já referenciados no index.html.
