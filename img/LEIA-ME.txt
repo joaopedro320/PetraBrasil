@@ -1,1 +1,11 @@
-Coloque aqui as imagens usadas pela LP, mantendo os nomes já referenciados no index.html.
+Projeto Petra Brasil pronto para Vercel.
+
+Estrutura:
+- index.html
+- css/style.css
+- js/script.js
+- img/
+
+O carrossel inclui as imagens originais da LP, as duas imagens enviadas separadamente e 35 imagens únicas extraídas dos três ZIPs mais recentes. Uma imagem duplicada do ZIP não foi repetida.
+
+Envie todos os arquivos e pastas mantendo esta estrutura.
