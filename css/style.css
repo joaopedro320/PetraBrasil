@@ -20,8 +20,8 @@ body{font-family:var(--b);background:var(--deep);color:var(--w);line-height:1.7;
 .nav{position:fixed;top:0;left:0;width:100%;z-index:100;padding:22px 0;transition:all .4s var(--ease)}
 .nav.s{background:rgba(6,13,24,.95);backdrop-filter:blur(24px);padding:12px 0;border-bottom:1px solid var(--w05)}
 .nav-i{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 28px}
-.nav-logo{height:28px;opacity:.95}
-.nav-logo img{height:100%;width:auto}
+.nav-logo{height:42px;opacity:.95}
+.nav-logo img{height:100%;width:auto;display:block}
 .nav-links{display:flex;gap:32px;list-style:none}
 .nav-links a{font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--w60);text-decoration:none;transition:color .3s}
 .nav-links a:hover{color:var(--copper)}
@@ -56,8 +56,7 @@ body{font-family:var(--b);background:var(--deep);color:var(--w);line-height:1.7;
 .hero h1 em{font-style:normal;color:var(--copper)}
 .hero-sub{font-size:.95rem;font-weight:300;color:var(--w60);max-width:520px;line-height:1.85;margin-bottom:40px}
 .hero-act{display:flex;gap:12px;flex-wrap:wrap}
-@media(max-width:960px){
-}
+@media(max-width:960px){}
 
 /* STRIP */
 .strip{border-top:1px solid var(--w05);border-bottom:1px solid var(--w05);padding:48px 0;background:var(--navy)}
@@ -261,3 +260,5 @@ body{font-family:var(--b);background:var(--deep);color:var(--w);line-height:1.7;
 .f-ok .check{font-size:2.2rem;color:var(--copper);margin-bottom:14px}
 .f-ok h3{font-family:var(--h);margin-bottom:10px}
 .f-ok p{color:var(--w40);font-size:.88rem}
+
+.hero-bg{background-position:center 48%}

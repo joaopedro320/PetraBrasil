@@ -1,0 +1,13 @@
+Versão corrigida e separada por partes, pronta para publicação.
+
+Estrutura:
+- index.html
+- css/style.css
+- js/script.js
+- img/
+
+Correções aplicadas:
+- acentuação e ortografia em toda a versão em português;
+- revisão da versão em espanhol;
+- pontuação final incluída na mesma cor dos trechos destacados;
+- imagens mantidas em pasta separada.
