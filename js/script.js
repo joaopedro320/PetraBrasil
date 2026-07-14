@@ -124,10 +124,17 @@ function checkForm(){
 }
 form.addEventListener('input',checkForm);
 form.addEventListener('change',checkForm);
+// ——— ENVIO DO FORMULÁRIO ———
+const WEBHOOK_URL='https://script.google.com/macros/s/AKfycbzCoCCxZS3vnFVww7rRVvnekWhE8hhaVMgpAjEyPMuFPNRue8P-97CJlI-P-GwMrk1EvA/exec';
+const WHATSAPP_NUMBER='553125120778';
 form.addEventListener('submit',e=>{
   e.preventDefault();
-  form.style.display='none';
-  document.getElementById('fOk').classList.add('show');
+  const payload=Object.fromEntries(new FormData(form).entries());
+  // 1º redirecionamento: envia os dados pra planilha via Google Apps Script
+  navigator.sendBeacon(WEBHOOK_URL,new Blob([JSON.stringify(payload)],{type:'text/plain'}));
+  // 2º redirecionamento: abre o WhatsApp com a mensagem pronta
+  const msg=encodeURIComponent('Olá, acabei de preencher o formulario e gostaria de ajuda no meu orçamento.');
+  window.location.href=`https://wa.me/${WHATSAPP_NUMBER}?text=${msg}`;
 });
 
 // Phone mask
