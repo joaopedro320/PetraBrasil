@@ -1,4 +1,4 @@
-Versão corrigida e separada por partes, pronta para publicação.
+Projeto Petra Brasil pronto para Vercel.
 
 Estrutura:
 - index.html
@@ -6,8 +6,6 @@ Estrutura:
 - js/script.js
 - img/
 
-Correções aplicadas:
-- acentuação e ortografia em toda a versão em português;
-- revisão da versão em espanhol;
-- pontuação final incluída na mesma cor dos trechos destacados;
-- imagens mantidas em pasta separada.
+O carrossel inclui as imagens originais da LP, as duas imagens enviadas separadamente e 35 imagens únicas extraídas dos três ZIPs mais recentes. Uma imagem duplicada do ZIP não foi repetida.
+
+Envie todos os arquivos e pastas mantendo esta estrutura.

@@ -33,7 +33,7 @@ body{font-family:var(--b);background:var(--deep);color:var(--w);line-height:1.7;
 .nav-cta:hover{background:var(--copper);color:var(--deep)}
 .hbg{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
 .hbg span{width:22px;height:1.5px;background:var(--w);transition:all .3s}
-.mob{display:none;position:fixed;inset:0;background:rgba(6,13,24,.98);z-index:99;flex-direction:column;justify-content:center;align-items:center;gap:24px}
+.mob{display:none;position:fixed;inset:0;background:rgba(6,13,24,.98);z-index:150;flex-direction:column;justify-content:center;align-items:center;gap:24px}
 .mob.open{display:flex}
 .mob a{font-family:var(--h);font-size:1.2rem;font-weight:500;color:var(--w);text-decoration:none}
 .mob-x{position:absolute;top:20px;right:24px;background:none;border:none;color:var(--w);font-size:1.8rem;cursor:pointer}
@@ -262,3 +262,5 @@ body{font-family:var(--b);background:var(--deep);color:var(--w);line-height:1.7;
 .f-ok p{color:var(--w40);font-size:.88rem}
 
 .hero-bg{background-position:center 48%}
+
+.car-count{font-family:var(--h);font-size:.62rem;letter-spacing:.08em;color:var(--w40);text-align:center}
