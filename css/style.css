@@ -27,7 +27,8 @@ body{font-family:var(--b);background:var(--deep);color:var(--w);line-height:1.7;
 .nav-links a:hover{color:var(--copper)}
 .nav-r{display:flex;align-items:center;gap:20px}
 .lang-sw{display:flex;gap:2px;background:var(--w05);border-radius:4px;overflow:hidden}
-.lang-btn{background:none;border:none;color:var(--w40);font-family:var(--b);font-size:.65rem;font-weight:600;letter-spacing:.08em;padding:6px 10px;cursor:pointer;transition:all .2s}
+.lang-btn{background:none;border:none;color:var(--w40);font-family:var(--b);font-size:.65rem;font-weight:600;letter-spacing:.08em;padding:6px 10px;cursor:pointer;transition:all .2s;display:inline-flex;align-items:center;gap:5px}
+.lang-flag{font-size:.9rem;line-height:1}
 .lang-btn.active{background:var(--copper);color:var(--deep)}
 .nav-cta{background:transparent;border:1px solid var(--copper);color:var(--copper);padding:10px 24px;font-family:var(--h);font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;transition:all .3s}
 .nav-cta:hover{background:var(--copper);color:var(--deep)}
@@ -75,6 +76,7 @@ body{font-family:var(--b);background:var(--deep);color:var(--w);line-height:1.7;
 .about p{color:var(--w60);font-size:.9rem;font-weight:300;margin-bottom:16px}
 .about-q{margin-top:32px;padding-left:22px;border-left:2px solid var(--copper)}
 .about-q p{font-size:.95rem;font-weight:400;color:var(--cream);font-style:italic}
+.about-q-cite{display:block;margin-top:10px;font-size:.72rem;font-weight:600;letter-spacing:.05em;color:var(--copper);font-style:normal}
 @media(max-width:960px){.about-g{grid-template-columns:1fr;gap:36px}.about-img{max-height:420px}}
 
 /* CAROUSEL */

@@ -25,9 +25,9 @@
 </ul>
 <div class="nav-r">
 <div class="lang-sw">
-<button class="lang-btn active" onclick="setLang('pt')">PT</button>
-<button class="lang-btn" onclick="setLang('en')">EN</button>
-<button class="lang-btn" onclick="setLang('es')">ES</button>
+<button class="lang-btn active" data-lang="pt" onclick="setLang('pt')"><span class="lang-flag">🇧🇷</span>PT</button>
+<button class="lang-btn" data-lang="en" onclick="setLang('en')"><span class="lang-flag">🇺🇸</span>EN</button>
+<button class="lang-btn" data-lang="es" onclick="setLang('es')"><span class="lang-flag">🇪🇸</span>ES</button>
 </div>
 <a class="nav-cta" data-t="nav_cta_btn" href="#orcamento">Solicitar Projeto</a>
 </div>
@@ -37,9 +37,9 @@
 <div class="mob" id="mob">
 <button class="mob-x" id="mobX">×</button>
 <div class="lang-sw" style="margin-bottom:20px">
-<button class="lang-btn active" onclick="setLang('pt');closeMob()">PT</button>
-<button class="lang-btn" onclick="setLang('en');closeMob()">EN</button>
-<button class="lang-btn" onclick="setLang('es');closeMob()">ES</button>
+<button class="lang-btn active" data-lang="pt" onclick="setLang('pt');closeMob()"><span class="lang-flag">🇧🇷</span>PT</button>
+<button class="lang-btn" data-lang="en" onclick="setLang('en');closeMob()"><span class="lang-flag">🇺🇸</span>EN</button>
+<button class="lang-btn" data-lang="es" onclick="setLang('es');closeMob()"><span class="lang-flag">🇪🇸</span>ES</button>
 </div>
 <a data-t="nav_about" href="#sobre" onclick="closeMob()">A Petra</a>
 <a data-t="nav_founders" href="#fundadores" onclick="closeMob()">Quem Somos</a>
@@ -66,7 +66,7 @@
 <div class="ctn">
 <div class="strip-g">
 <div><div class="st-n" data-count="15">0</div><div class="st-l" data-t="stat_years">anos de mercado</div></div>
-<div><div class="st-n" data-count="63" data-suffix="+">0</div><div class="st-l" data-t="stat_countries">países atendidos</div></div>
+<div><div class="st-n" data-count="63" data-suffix="+">0</div><div class="st-l" data-t="stat_countries">países com participação Petra</div></div>
 <div><div class="st-n" data-count="30" data-suffix="+">0</div><div class="st-l" data-t="stat_offices">escritórios parceiros</div></div>
 <div><div class="st-n" data-count="100" data-suffix="%">0</div><div class="st-l" data-t="stat_own">linha de autoria própria</div></div>
 </div>
@@ -86,7 +86,8 @@
 <p data-t="about_p1">A Petra Brasil é referência em curadoria e alfaiataria em pedra natural, com raízes na mineração e no comércio exterior. Mais de quatro décadas internacionalizando pedras de clivagem natural. Hoje operamos como showroom, desenvolvedora e parceira técnica do arquiteto em cada projeto.</p>
 <p data-t="about_p2">Nosso trabalho começa onde o catálogo dos outros termina. Selecionamos, desenvolvemos e transformamos materiais sob encomenda para projetos que exigem identidade e não toleram repetição.</p>
 <div class="about-q">
-<p data-t="about_quote">“Cada projeto pede um material diferente — é isso que buscamos entender antes de indicar qualquer coisa.”</p>
+<p data-t="about_quote">“Cada projeto pede um material diferente. É isso que buscamos entender antes de indicar qualquer coisa.”</p>
+<span class="about-q-cite" data-t="about_quote_cite">Olivier Cabanellas, fundador da Petra Brasil</span>
 </div>
 </div>
 </div>
@@ -103,8 +104,8 @@
 <div class="f-txt">
 <div class="eye" data-t="found_o_eye">Fundador</div>
 <h3>Olivier Cabanellas</h3>
-<div class="role" data-t="found_o_role">Visionário da pedra brasileira no mundo</div>
-<p data-t="found_o_p1">Nos anos 80, quando poucos olhavam para fora do Brasil, Olivier já trabalhava para colocar as pedras de clivagem natural no mapa global. Construiu rotas de exportação, abriu distribuidora na América Central e levou materiais brasileiros a projetos em dezenas de países.</p>
+<div class="role" data-t="found_o_role">Visionário da pedra brasileira</div>
+<p data-t="found_o_p1">Nos anos 80, Olivier começou a trabalhar com pedras de clivagem natural, construindo as rotas comerciais e os processos que dariam origem à Petra Brasil.</p>
 <p data-t="found_o_p2">Sua vivência industrial determinou o DNA da Petra: controle rigoroso de processo, rastreabilidade de origem e acesso direto a pedreiras que permitem criar materiais sob demanda.</p>
 <blockquote data-t="found_o_q">A experiência de quem extrai e processa pedra há mais de quatro décadas está em cada material que sai do nosso showroom.</blockquote>
 </div>
@@ -121,10 +122,10 @@
 <div class="f-txt">
 <div class="eye" data-t="found_a_eye">Sócia-administradora</div>
 <h3>Ana Luiza Ganem</h3>
-<div class="role" data-t="found_a_role">O cérebro estratégico da operação em BH</div>
-<p data-t="found_a_p1">Nos anos 2000, Ana Luiza entrou para fortalecer a exportação. Quando o mercado mudou e lojistas passaram a ir direto aos fornecedores, liderou a abertura do showroom em Belo Horizonte para levar a Petra ao arquiteto especificador.</p>
-<p data-t="found_a_p2">Comanda a operação de ponta a ponta: compras, controles, entregas, relacionamento com escritórios e visão de negócio. Construiu um posicionamento seletivo num mercado dominado por multimarcas, apostando em exclusividade e excelência.</p>
-<blockquote data-t="found_a_q">Competimos com as multimarcas pelo que elas não oferecem: material sob medida, curadoria e atendimento técnico direto.</blockquote>
+<div class="role" data-t="found_a_role">O cérebro estratégico da operação</div>
+<p data-t="found_a_p1">Nos anos 2000, Ana Luiza entrou para fortalecer a exportação. Quando o mercado mudou e lojistas passaram a ir direto aos fornecedores, liderou a abertura do showroom para levar a Petra ao arquiteto especificador.</p>
+<p data-t="found_a_p2">Comanda a operação de ponta a ponta: compras, controles, entregas, relacionamento com escritórios e visão de negócio. Construiu um posicionamento exclusivo, apostando em curadoria própria, atendimento técnico direto e excelência.</p>
+<blockquote data-t="found_a_q">Nosso diferencial está no que oferecemos de exclusivo: material sob medida, curadoria própria e atendimento técnico direto.</blockquote>
 </div>
 </div>
 </div>
@@ -185,7 +186,6 @@
 <div class="car-slide"><img alt="Peça curva em pedra natural" data-cap="Exploração de curvas, veios e acabamento da pedra" loading="lazy" src="img/curadoria-petra-06.jpg"/></div>
 <div class="car-slide"><img alt="Amostra de pedra cinza" data-cap="Seleção de material e acabamento para projeto personalizado" loading="lazy" src="img/curadoria-petra-07.jpg"/></div>
 <div class="car-slide"><img alt="Curadoria no showroom Petra" data-cap="Atendimento consultivo e seleção de materiais no showroom" loading="lazy" src="img/curadoria-petra-08.jpg"/></div>
-<div class="car-slide"><img alt="Showroom Petra Brasil" data-cap="Experiência de curadoria e atendimento no showroom Petra" loading="lazy" src="img/curadoria-petra-09.jpg"/></div>
 <div class="car-slide"><img alt="Peça redonda em pedra natural" data-cap="Desenvolvimento de formatos especiais em pedra natural" loading="lazy" src="img/curadoria-petra-10.jpg"/></div>
 <div class="car-slide"><img alt="Pranchas de estudo de paginação" data-cap="Cocriação de desenhos, padrões e possibilidades de aplicação" loading="lazy" src="img/curadoria-petra-11.jpg"/></div>
 <div class="car-slide"><img alt="Peça autoral em pedra" data-cap="Peça autoral com desenho e acabamento personalizados" loading="lazy" src="img/curadoria-petra-12.jpg"/></div>
@@ -243,9 +243,9 @@
 <ul class="cred-ul">
 <li data-t="cred_l1">Participação em projetos como os aeroportos de Narita (Japão) e Bruxelas</li>
 <li data-t="cred_l2">Participação no Centro de Convenções de Honolulu</li>
-<li data-t="cred_l3">Exportação para mais de 63 países</li>
+<li data-t="cred_l3">Participação em projetos em mais de 63 países</li>
 <li data-t="cred_l4">Mineração e indústria própria no Brasil</li>
-<li data-t="cred_l5">Pacote completo: revestimento + argamassa + impermeabilizante</li>
+<li data-t="cred_l5">Manual técnico de instalação em cada projeto</li>
 </ul>
 </div>
 <div class="cred-vis">
@@ -267,7 +267,7 @@
 <div class="stp"><div class="stp-n">01</div><h3 data-t="stp1_h">Briefing do projeto</h3><p data-t="stp1_p">Entendemos o conceito, o ambiente, o estilo e as necessidades técnicas e estéticas.</p></div>
 <div class="stp"><div class="stp-n">02</div><h3 data-t="stp2_h">Curadoria de materiais</h3><p data-t="stp2_p">Selecionamos ou desenvolvemos materiais compatíveis. Se não existe, criamos junto com você.</p></div>
 <div class="stp"><div class="stp-n">03</div><h3 data-t="stp3_h">Orientação técnica</h3><p data-t="stp3_p">Avaliamos propriedades, compatibilidade com o ambiente, durabilidade e cuidados necessários.</p></div>
-<div class="stp"><div class="stp-n">04</div><h3 data-t="stp4_h">Entrega completa</h3><p data-t="stp4_p">Documento técnico com as especificações de instalação: materiais, argamassa e impermeabilizante indicados para o seu projeto.</p></div>
+<div class="stp"><div class="stp-n">04</div><h3 data-t="stp4_h">Entrega completa</h3><p data-t="stp4_p">Documento técnico com as especificações de instalação indicadas para o seu projeto.</p></div>
 </div>
 </div>
 </section>
@@ -283,7 +283,7 @@
 <div class="fb"><div class="fb-d"></div><p data-t="fb2">Atendimento personalizado e consultivo</p></div>
 <div class="fb"><div class="fb-d"></div><p data-t="fb3">Possibilidade de cocriação de materiais exclusivos</p></div>
 <div class="fb"><div class="fb-d"></div><p data-t="fb4">Visita ao showroom com amostras físicas</p></div>
-<div class="fb"><div class="fb-d"></div><p data-t="fb5">Pacote completo: revestimento + argamassa + impermeabilizante</p></div>
+<div class="fb"><div class="fb-d"></div><p data-t="fb5">Manual técnico de instalação para o seu projeto</p></div>
 </div>
 <div class="fc an">
 <h3 data-t="fc_h">Solicite uma consultoria</h3>
