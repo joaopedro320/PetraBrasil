@@ -29,6 +29,35 @@ es:{
   ct_addr:"Dirección",ct_contact:"Contacto",ct_phone:"Teléfono",ct_hours:"Horarios",ct_open:"Horario de atención",ct_schedule:"Lunes a viernes: de 9:00 a 18:00<br>Sábado: con cita previa"
 }
 };
+
+// ——— ARQUITETOS (i18n + vídeo) ———
+Object.assign(T.en,{
+  nav_arq:"Architects",arq_eye:"Partner architects",arq_h2:"Who signs projects with Petra",arq_sub:"Studios that turn natural stone into identity, each with its own eye and language.",
+  arq_watch:"Watch video",arq_area:"Fields of work",arq_focus:"Focus",arq_style:"Architectural style",
+  arq_s_role:"Sérgio Viana Arquitetura · 24-year career",
+  arq_s_area:"Residential, corporate, commercial, hospitality and entertainment projects.",
+  arq_s_focus:"Sensory architecture, respect for topography, Minas Gerais identity and the integration of technology, cultural memory and construction efficiency.",
+  arq_s_q:"More than creating spaces, Sérgio Viana Arquitetura seeks to create living experiences.",
+  arq_f_role:"28 years in architecture · over 20 years teaching",
+  arq_f_area:"Residential, corporate, commercial and interior architecture, with projects that combine aesthetics, functionality and identity.",
+  arq_f_style:"Contemporary, timeless and sophisticated, valuing materiality, natural light, proportion and the essence of each client.",
+  arq_f_q:"My architecture is born from interpreting people, stories and places. More than imposing an aesthetic language, I seek to understand the essence of each project and turn it into spaces with identity, coherence and meaning."
+});
+Object.assign(T.es,{
+  nav_arq:"Arquitectos",arq_eye:"Arquitectos aliados",arq_h2:"Quién firma proyectos con Petra",arq_sub:"Estudios que transforman la piedra natural en identidad, cada uno con su mirada y su lenguaje.",
+  arq_watch:"Ver video",arq_area:"Áreas de actuación",arq_focus:"Enfoque",arq_style:"Estilo arquitectónico",
+  arq_s_role:"Sérgio Viana Arquitetura · 24 años de carrera",
+  arq_s_area:"Proyectos residenciales, corporativos, comerciales, de hotelería y entretenimiento.",
+  arq_s_focus:"Arquitectura sensorial, valorización de la topografía, identidad minera e integración entre tecnología, memoria cultural y eficiencia constructiva.",
+  arq_s_q:"Más que crear ambientes, Sérgio Viana Arquitetura busca crear experiencias de habitar.",
+  arq_f_role:"28 años de arquitectura · más de 20 años en la docencia",
+  arq_f_area:"Arquitectura residencial, corporativa, comercial e interiores, con proyectos que unen estética, funcionalidad e identidad.",
+  arq_f_style:"Contemporáneo, atemporal y sofisticado, valorando la materialidad, la luz natural, las proporciones y la esencia de cada cliente.",
+  arq_f_q:"Mi arquitectura nace de la interpretación de personas, historias y lugares. Más que imprimir un lenguaje estético, busco comprender la esencia de cada proyecto y transformarla en espacios con identidad, coherencia y significado."
+});
+function vidOpen(id){document.getElementById('vmFrame').src='https://drive.google.com/file/d/'+id+'/preview';document.getElementById('vm').classList.add('open');document.body.style.overflow='hidden'}
+function vidClose(){document.getElementById('vm').classList.remove('open');document.getElementById('vmFrame').src='';document.body.style.overflow=''}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&document.getElementById('vm').classList.contains('open'))vidClose()});
 let curLang='pt';
 function setLang(l){
   curLang=l;
